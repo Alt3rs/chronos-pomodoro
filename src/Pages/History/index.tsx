@@ -48,6 +48,7 @@ export function History() {
 
   useEffect(() => {
     showMessage.dismiss();
+    document.title = 'Histórico';
   }, []);
 
   function handleSortTasks({ field }: Pick<SortTasksOptions, 'field'>) {
