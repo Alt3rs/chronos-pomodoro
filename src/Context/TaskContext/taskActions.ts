@@ -1,4 +1,5 @@
 import { TaskModel } from '../../Models/TaskModel';
+import { TaskStateModel } from '../../Models/TaskStateModel';
 
 export enum TaskActionsType {
   START_TASK = 'START_TASK',
@@ -6,6 +7,7 @@ export enum TaskActionsType {
   RESET_STATE = 'RESET_STATE',
   COUNT_DOWN = 'COUNT_DOWN',
   COMPLETE_TASK = 'COMPLETE_TASK',
+  CHANGE_SETTINGS = 'CHANGE_SETTINGS',
 }
 
 export type TaskActionModel =
@@ -16,6 +18,10 @@ export type TaskActionModel =
   | {
       type: TaskActionsType.COUNT_DOWN;
       payload: { secondsRemaining: number };
+    }
+  | {
+      type: TaskActionsType.CHANGE_SETTINGS;
+      payload: TaskStateModel['config'];
     }
   | {
       type: TaskActionsType.INTERRUPT_TASK;
