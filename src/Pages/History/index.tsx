@@ -143,7 +143,7 @@ export function History() {
 
         {!hasTasks && (
           <p style={{ textAlign: 'center', fontWeight: 'bold' }}>
-            Ainda não existem tarefas criadas.
+            Ainda não existem tarefas criadas
           </p>
         )}
       </Container>
