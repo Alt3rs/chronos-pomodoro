@@ -83,3 +83,5 @@ npm install
 # Start the project
 npm run dev
 ```
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Alt3rs/chronos-pomodoro/blob/main/LICENSE) file for details.
